@@ -9,9 +9,9 @@
 
 **2)**
    <ol><li>1) - Azure Migrate is an appliance run locally in the on-prem environment in order to indentify workloads in use, dependencies between said workloads, and workload optimization in order to help optimize migration to Azure services.</li>
-  <li>2) - Machine, disk, and network interface (NIC) metadata</li>
-       - Installed applications, roles, and features
-       - Performance data such as CPU and memory utilization, disk IOPS, and throughput</li>
+  <li>2) <ul><li>- Machine, disk, and network interface (NIC) metadata</li>
+       <li>- Installed applications, roles, and features</li>
+       <li>- Performance data such as CPU and memory utilization, disk IOPS, and throughput</li>
    <li>3) - The workloads identified would be the Web server workload, the Application server workload, the SQL server workload, the Active Directory server workload, and the File server workload.</li></ol>
 
 **3)**
