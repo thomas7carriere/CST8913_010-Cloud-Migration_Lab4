@@ -2,17 +2,17 @@
 
 **1)**
    <ol><li>1) - Digital Estate refers to all the digital assets of an individual or organization. Some examples of these assets include infrastructure (ex: servers, VMs), applications, data (ex: databases). </li>
-   <li>2)</li> - Knowing the digital estate matters of an orginazation before migrating to the cloud is important because it shows what systems exist and how they depend on each other. 
-   <li>3)</li> - Downtime when systems stop working because they rely on other servers that weren’t migrated
+   <li>2) - Knowing the digital estate matters of an orginazation before migrating to the cloud is important because it shows what systems exist and how they depend on each other. </li>
+   <li>3) - Downtime when systems stop working because they rely on other servers that weren’t migrated
         - Data loss from moving data systems without proper planning. An example being moving a database without having proper backups.
-        - Higher costs due to migrating unnecessary or oversized resources
+        - Higher costs due to migrating unnecessary or oversized resources</li></ol>
 
 **2)**
-  **2.1)** - Azure Migrate is an appliance run locally in the on-prem environment in order to indentify workloads in use, dependencies between said workloads, and workload optimization in order to help optimize migration to Azure services.
-  **2.2)** - Machine, disk, and network interface (NIC) metadata
+   <ol><li>1) - Azure Migrate is an appliance run locally in the on-prem environment in order to indentify workloads in use, dependencies between said workloads, and workload optimization in order to help optimize migration to Azure services.</li>
+  <li>2) - Machine, disk, and network interface (NIC) metadata</li>
        - Installed applications, roles, and features
-       - Performance data such as CPU and memory utilization, disk IOPS, and throughput
-  **2.3)** - The workloads identified would be the Web server workload, the Application server workload, the SQL server workload, the Active Directory server workload, and the File server workload.
+       - Performance data such as CPU and memory utilization, disk IOPS, and throughput</li>
+   <li>3) - The workloads identified would be the Web server workload, the Application server workload, the SQL server workload, the Active Directory server workload, and the File server workload.</li></ol>
 
 **3)**
   **3.1)** - The Web Server is dependant on the Application Server, in order to communicate requests and their responses. The Application Server is likely dependant on the SQL Server for retrieval of stored data. The Application Server may be dependant on the File Server if it requires file access. All servers depend on Active Directory for authentication and secure access.
