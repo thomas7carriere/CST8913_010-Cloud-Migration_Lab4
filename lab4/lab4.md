@@ -1,9 +1,9 @@
 <h1>Lab 4 - CST8913_Cloud_Migration</h1>
 
 **1)**
-   <ol><li>**1.1)**</li> - Digital Estate refers to all the digital assets of an individual or organization. Some examples of these assets include infrastructure (ex: servers, VMs), applications, data (ex: databases). 
-   <li>**1.2)**</li> - Knowing the digital estate matters of an orginazation before migrating to the cloud is important because it shows what systems exist and how they depend on each other. 
-   <li>**1.3)**</li></ol> - Downtime when systems stop working because they rely on other servers that weren’t migrated
+   <ol><li>.1)</li> - Digital Estate refers to all the digital assets of an individual or organization. Some examples of these assets include infrastructure (ex: servers, VMs), applications, data (ex: databases). 
+   <li>.2)**</li> - Knowing the digital estate matters of an orginazation before migrating to the cloud is important because it shows what systems exist and how they depend on each other. 
+   <li>.3)</li></ol> - Downtime when systems stop working because they rely on other servers that weren’t migrated
         - Data loss from moving data systems without proper planning. An example being moving a database without having proper backups.
         - Higher costs due to migrating unnecessary or oversized resources
 
