@@ -12,7 +12,7 @@
   <li>2.2) <ul><li>Machine, disk, and network interface (NIC) metadata</li>
        <li>Installed applications, roles, and features</li>
        <li>Performance data such as CPU and memory utilization, disk IOPS, and throughput</li></ul>
-   <li>2.3)T he workloads identified would be the Web server workload, the Application server workload, the SQL server workload, the Active Directory server workload, and the File server workload.</li></ul>
+   <li>2.3) The workloads identified would be the Web server workload, the Application server workload, the SQL server workload, the Active Directory server workload, and the File server workload.</li></ul>
 
 **3)**
   <ul><li>3.1) The Web Server is dependant on the Application Server, in order to communicate requests and their responses. The Application Server is likely dependant on the SQL Server for retrieval of stored data. The Application Server may be dependant on the File Server if it requires file access. All servers depend on Active Directory for authentication and secure access.</li>
@@ -28,3 +28,6 @@
   FILE-01	  Not Ready	                              As pointed out in the lab handout, Windows Server 2012 is a legacy OS and is not supported by Microsoft (no updates). 
 
 5)
+ <ul><li>5.1) Once marked as Azure Ready, Azure's server asessment tool can recommend sizing of Azure VMs and disk types based on-prem resources, as well as their related costs. This can be done with or without performance metrics of the resources, but ideally with them to improve optimizations. Database sku's can also be recommend, as well as their respective pricing tiers. </li>
+  <ul><li>5.2) Performance-based sizing takes into account the performance history of the on-prem services in order to recommend Azure solutions that will meet the clients needs without wasting resources by over-provisioning.</li>
+   <li>As-is sizing only considers the on-prem hardware to generate recommedations, which may prove inefficient if the resources were initially over-provisioned. This could incur unecessary costs.</li></ul></ul>
