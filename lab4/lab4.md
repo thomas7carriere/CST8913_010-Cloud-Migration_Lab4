@@ -15,9 +15,9 @@
    <li>2.3)The workloads identified would be the Web server workload, the Application server workload, the SQL server workload, the Active Directory server workload, and the File server workload.</li></ul>
 
 **3)**
-  <ol><li>3.1)The Web Server is dependant on the Application Server, in order to communicate requests and their responses. The Application Server is likely dependant on the SQL Server for retrieval of stored data. The Application Server may be dependant on the File Server if it requires file access. All servers depend on Active Directory for authentication and secure access.</li>
+  <ul><li>3.1)The Web Server is dependant on the Application Server, in order to communicate requests and their responses. The Application Server is likely dependant on the SQL Server for retrieval of stored data. The Application Server may be dependant on the File Server if it requires file access. All servers depend on Active Directory for authentication and secure access.</li>
   <li>3.2)By analyzing where dependencies exist, a migration plan can migrate dependent services together, avoiding outages caused by missing required services.</li>
-  <li>3.3)Given the dependencies described in 3.1, one possible migration group could be the Web Server, the Application Server, and Active Directory (*assuming the Application Server is not dependant on the File Server).</li></ol>
+  <li>3.3)Given the dependencies described in 3.1, one possible migration group could be the Web Server, the Application Server, and Active Directory (*assuming the Application Server is not dependant on the File Server).</li></ul>
   
 4)
   **Server**  	**Azure Readiness**	                        **Justification**
