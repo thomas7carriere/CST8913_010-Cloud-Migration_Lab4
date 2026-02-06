@@ -20,12 +20,38 @@
   <li>3.3) Given the dependencies described in 3.1, one possible migration group could be the Web Server, the Application Server, and Active Directory (*assuming the Application Server is not dependant on the File Server).</li></ul>
   
 4)
-  <ul><li>**Server**  	**Azure Readiness**	                        **Justification** </li>
- <li> WEB-01	  Ready 	                                The application server is running on a current operating system. A "lift and shift" approach can be taken.</li>
-  <li>APP-01  	Conditionally Ready                     Windows 16 Server is no longer receiving feature updates. Consider if the OS should be updated.</li>
- <li> DB-01	    Conditionally Ready                     Windows 16 Server is no longer receiving feature updates. Consider if the OS should be updated. Cost analysis of moving the database workload to the cloud should be considered.</li>
-  <li>DC-01    	Conditionally Ready                     Crucial to the operations of all services. Provides the largest security risk as is responsible for authentication. Extra care should be taken while migrating.</li>
-  <li>FILE-01	  Not Ready	                              As pointed out in the lab handout, Windows Server 2012 is a legacy OS and is not supported by Microsoft (no updates). </li></ul>
+ <table>
+  <tr>
+    <th>Server</th>
+    <th>Azure Readiness</th>
+    <th>Justification</th>
+  </tr>
+  <tr>
+    <td>WEB-01</td>
+    <td>Ready</td>
+    <td>The application server is running on a current operating system. A lift-and-shift approach can be taken.</td>
+  </tr>
+  <tr>
+    <td>APP-01</td>
+    <td>Conditionally Ready</td>
+    <td>Windows Server 2016 is no longer receiving feature updates. Consider upgrading the OS before migration.</td>
+  </tr>
+  <tr>
+    <td>DB-01</td>
+    <td>Conditionally Ready</td>
+    <td>Windows Server 2016 is no longer receiving feature updates. OS upgrade and cost analysis for migrating the database workload should be considered.</td>
+  </tr>
+  <tr>
+    <td>DC-01</td>
+    <td>Conditionally Ready</td>
+    <td>Critical to all services and responsible for authentication. Presents a higher security risk, requiring extra care during migration.</td>
+  </tr>
+  <tr>
+    <td>FILE-01</td>
+    <td>Not Ready</td>
+    <td>Windows Server 2012 is a legacy OS and is no longer supported by Microsoft, meaning no security or feature updates.</td>
+  </tr>
+</table>
 
 5)
  <ul><li>5.1) Once marked as Azure Ready, Azure's server asessment tool can recommend sizing of Azure VMs and disk types based on-prem resources, as well as their related costs. This can be done with or without performance metrics of the resources, but ideally with them to improve optimizations. Database sku's can also be recommend, as well as their respective pricing tiers. </li>
