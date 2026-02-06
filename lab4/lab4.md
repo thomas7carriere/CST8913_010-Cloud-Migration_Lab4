@@ -19,7 +19,7 @@
   <li>3.2) By analyzing where dependencies exist, a migration plan can migrate dependent services together, avoiding outages caused by missing required services.</li>
   <li>3.3) Given the dependencies described in 3.1, one possible migration group could be the Web Server, the Application Server, and Active Directory (*assuming the Application Server is not dependant on the File Server).</li></ul>
   
-4)
+**4)**
  <table>
   <tr>
     <th>Server</th>
@@ -55,5 +55,5 @@
 
 5)
  <ul><li>5.1) Once marked as Azure Ready, Azure's server asessment tool can recommend sizing of Azure VMs and disk types based on-prem resources, as well as their related costs. This can be done with or without performance metrics of the resources, but ideally with them to improve optimizations. Database sku's can also be recommend, as well as their respective pricing tiers. </li>
-  5.2)<ul><li> Performance-based sizing takes into account the performance history of the on-prem services in order to recommend Azure solutions that will meet the clients needs without wasting resources by over-provisioning.</li>
+  <li>5.2)</li><ul><li> Performance-based sizing takes into account the performance history of the on-prem services in order to recommend Azure solutions that will meet the clients needs without wasting resources by over-provisioning.</li>
    <li>As-is sizing only considers the on-prem hardware to generate recommedations, which may prove inefficient if the resources were initially over-provisioned. This could incur unecessary costs.</li></ul></ul>
